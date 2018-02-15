@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.michael.commcloudapp.sendAlertActivity">
+
+
+    <TextView android:text="@string/alertTypeString" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertTypeHeading"
+        android:textSize="15dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertTypeSpinner"
+        android:layout_toEndOf="@id/alertTypeHeading"
+        android:layout_marginBottom="10dp"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertDetailHeading"
+        android:layout_below="@id/alertTypeSpinner"
+        android:text="@string/alertDetailString"
+        android:textSize="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertDetailText"
+        android:layout_below="@id/alertDetailHeading"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alertRatingString"
+        android:textSize="15dp"
+        android:id="@+id/alertRatingHeading"
+        android:layout_below="@id/alertDetailText"
+        android:layout_marginTop="10dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertRatingSpinner"
+        android:layout_below="@+id/alertDetailText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/alertTypeSpinner"
+        android:layout_marginTop="10dp"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="@string/alertLocationString"
+        android:id="@+id/alertLocationHeading"
+        android:layout_below="@id/alertRatingSpinner"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressLabel"
+        android:text="Address:"
+        android:layout_below="@id/alertLocationHeading"
+        android:layout_marginBottom="5dp"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertAddressIn"
+        android:layout_below="@id/alertLocationHeading"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityLabel"
+        android:text="City: "
+        android:layout_below="@id/alertAddressIn"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityIn"
+        android:layout_below="@id/cityLabel"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stateLabel"
+        android:text="State: "
+        android:layout_below="@id/cityIn"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stateIn"
+        android:layout_below="@id/stateLabel"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stateLabel"
+        android:layout_marginTop="20dp"
+        android:id="@+id/alertSubmitButton"
+        android:text="@string/alertSubmitString"
+        android:onClick="sendAlert"/>
+
+</RelativeLayout>

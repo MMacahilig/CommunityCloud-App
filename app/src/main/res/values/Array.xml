@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alertTypeArray">
+        <item>Fire</item>
+        <item>Flood</item>
+        <item>Severe Storm</item>
+        <item>Disease</item>
+        <item>Crime</item>
+        <item>Emergency</item>
+
+    </string-array>
+
+    <string-array name="alertRatingArray">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+</resources>

@@ -3,4 +3,5 @@
     android:layout_height="match_parent" android:choiceMode="singleChoice"
     android:divider="@android:color/transparent" android:dividerHeight="0dp"
     android:background="#cccc"
-    tools:context="com.michael.koneqtmobileapp.NavigationDrawerFragment" />
+    tools:context="com.michael.commcloudapp.NavigationDrawerFragment" />
+
